@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
+id="WebApp_ID" version="6.0">
+  <display-name>Unitea</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <session-config>
+    <session-timeout>180</session-timeout> 
+</session-config>
+  
+  <servlet>
+  	<servlet-name>CadastrarUsuario</servlet-name>
+  	<servlet-class>unitea.controller.CadastrarUsuario</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CadastrarUsuario</servlet-name>
+  	<url-pattern>/cadastrarUsuario</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CadastrarFamiliar</servlet-name>
+  	<servlet-class>unitea.controller.CadastrarFamiliar</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CadastrarFamiliar</servlet-name>
+  	<url-pattern>/cadastrarFamiliar</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CadastrarMonitor</servlet-name>
+  	<servlet-class>unitea.controller.CadastrarMonitor</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CadastrarMonitor</servlet-name>
+  	<url-pattern>/cadastrarMonitor</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>unitea.controller.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/loginL</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EditarPerfilFamiliar</servlet-name>
+  	<servlet-class>unitea.controller.EditarPerfilFamiliar</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditarPerfilFamiliar</servlet-name>
+  	<url-pattern>/editarFamiliar</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EditarPerfilMonitor</servlet-name>
+  	<servlet-class>unitea.controller.EditarPefilMonitor</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditarPerfilMonitor</servlet-name>
+  	<url-pattern>/editarMonitor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ExcluirPerfil</servlet-name>
+  	<servlet-class>unitea.controller.ExcluirPerfil</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ExcluirPerfil</servlet-name>
+  	<url-pattern>/excluirPerfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>unitea.controller.Logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CriarPedido</servlet-name>
+  	<servlet-class>unitea.controller.CriarPedido</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CriarPedido</servlet-name>
+  	<url-pattern>/criarPedido</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MostrarPedidosCriadosFamiliar</servlet-name>
+  	<servlet-class>unitea.controller.MostrarPedidosCriadosFamiliar</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MostrarPedidosCriadosFamiliar</servlet-name>
+  	<url-pattern>/mostrarPedidos</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MostrarPedidosPendentesMonitor</servlet-name>
+  	<servlet-class>unitea.controller.MostrarPedidosPendentesMonitor</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MostrarPedidosPendentesMonitor</servlet-name>
+  	<url-pattern>/mostrarPendentes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AceitarPedido</servlet-name>
+  	<servlet-class>unitea.controller.AceitarPedido</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AceitarPedido</servlet-name>
+  	<url-pattern>/aceitarPedido</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MostrarPedidosEmAndamentoF</servlet-name>
+    <servlet-class>unitea.controller.MostrarPedidosEmAndamentoF</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MostrarPedidosEmAndamentoF</servlet-name>
+  	<url-pattern>/telaInicial</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CriarChat</servlet-name>
+    <servlet-class>unitea.controller.CriarChat</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CriarChat</servlet-name>
+  	<url-pattern>/chat</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CriarChatM</servlet-name>
+    <servlet-class>unitea.controller.CriarChatM</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CriarChatM</servlet-name>
+  	<url-pattern>/chatMonitor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdicionarComentario</servlet-name>
+    <servlet-class>unitea.controller.AdicionarComentario</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdicionarComentario</servlet-name>
+  	<url-pattern>/comentar</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdicionarComentarioM</servlet-name>
+    <servlet-class>unitea.controller.AdicionarComentarioM</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AdicionarComentarioM</servlet-name>
+  	<url-pattern>/comentarMonitor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MostrarPedidosEmAndamentoM</servlet-name>
+    <servlet-class>unitea.controller.MostrarPedidosEmAndamentoM</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MostrarPedidosEmAndamentoM</servlet-name>
+  	<url-pattern>/telaInicialM</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditarPedido</servlet-name>
+    <servlet-class>unitea.controller.EditarPedido</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditarPedido</servlet-name>
+  	<url-pattern>/editarPedido</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ExcluirPedido</servlet-name>
+    <servlet-class>unitea.controller.ExcluirPedido</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ExcluirPedido</servlet-name>
+  	<url-pattern>/excluirPedido</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
